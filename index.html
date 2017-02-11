@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:100,300,400" rel="stylesheet">
+	<link href="lightbox.css" rel="stylesheet">
 	<style type="text/css">
 		body {
 			font-family: 'Roboto Condensed', sans-serif;
@@ -19,7 +20,7 @@
 			margin:0 50px 50px;
 			border-radius: 3px;
 			background-color: #96b8c2;
-			opacity:0.7;
+			opacity:0.75;
 			color:white;
 		}
 		.boxTitle{
@@ -33,9 +34,12 @@
 			border-radius: 3px;
 		}
 		.page-header h1 {
+			font-family: 'Roboto', sans-serif;
 			font-size: 50px;
 			text-shadow: 0 0 10px rgba(255,255,255,0.7);
-			text-transform: uppercase;
+			/*text-transform: uppercase;*/
+			font-weight: 300;
+			letter-spacing: 1px;
 		}
 		.page-header h2 {
 			letter-spacing: 9px;
@@ -53,8 +57,8 @@
 			font-weight: 300;
 		}
 		.img-rounded {
-			width: 140px;
-			height: 140px;
+			/*width: 140px;*/
+			/*height: 140px;*/
 			margin:20px;
 			border-radius: 3px;
 		}
@@ -68,6 +72,7 @@
 		}
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="lightbox.js"></script>
 	<script type="text/javascript">
 		$(function() {
 			var codeMap = {
@@ -101,32 +106,46 @@
 				<input class="form-control input-lg" style="display:inline-block;width:70px;color:#5c7076;text-align:center" placeholder="000" type="text">
 				<input class="form-control input-lg" style="display:inline-block;width:90px;color:#5c7076" type="submit" value="Next">
 			</form>
-			<p style="display:none" class="error"><b>Invalid code.</b> Please double-check the code on the back of your invitation and let us know if you need help. Jon (480) 220 - 1529 </p>
+			<p style="display:none" class="error">Invalid code. Please double-check the code on the back of your<br>invitation and let us know if you need help. Jon (480) 220 - 1529 </p>
 		</div>
-		<h1 class="boxTitle">WHERE + WHEN</h1>
+		<h1 class="boxTitle">WHEN + WHERE</h1>
 		<div class="box text-center">
-			<!-- <h1>May 6, 2017</h1> -->
-			<h3>Agave of Sedona</h3>
+			<h2>Saturday May 6, 2017</h2>
+			<h2>Agave of Sedona</h2>
 			<div class="map">
 				<iframe width="600" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjwkQwkihLYcRGXkfYuDAxws&key=AIzaSyCQG0N4NCJ25n52ZgcAtw9-vVNE7RqHyK0&maptype=satellite&zoom=18"></iframe>
 			</div>
 		</div>
 		<h1 class="boxTitle">HIKES</h1>
 		<div class="box text-center">
-			<h1>Sedona</h1>
+			<h2>Bear Mountain</h2>
+			<h2>Devil's Bridge</h2>
+			<h2>West Fork</h2>
+			<h2>Soldier Pass</h2>
 			<!-- <h3>Hikes</h3> -->
 		</div>
 		<h1 class="boxTitle">R + J</h1>
 		<div class="box text-center">
-			<img src="photos/bey.jpg" alt="" class="img-rounded">
-			<img src="photos/car.jpg" alt="" class="img-rounded">
-			<img src="photos/eclipse.jpg" alt="" class="img-rounded">
-			<img src="photos/bey.jpg" alt="" class="img-rounded">
-			<img src="photos/car.jpg" alt="" class="img-rounded">
-			<img src="photos/eclipse.jpg" alt="" class="img-rounded">
-			<img src="photos/bey.jpg" alt="" class="img-rounded">
-			<img src="photos/car.jpg" alt="" class="img-rounded">
-			<img src="photos/eclipse.jpg" alt="" class="img-rounded">
+			<a href="photos/bearmtn.jpg" data-lightbox="rj" data-title=""><img src="photos/bearmtnT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/bey.jpg" data-lightbox="rj" data-title=""><img src="photos/beyT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/flatiron.jpg" data-lightbox="rj" data-title=""><img src="photos/flatironT.jpg" alt="" class="img-rounded"></a>
+			<br>
+			<a href="photos/dc.jpg" data-lightbox="rj" data-title=""><img src="photos/dcT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/desert.jpg" data-lightbox="rj" data-title=""><img src="photos/desertT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/camelback.jpg" data-lightbox="rj" data-title=""><img src="photos/camelbackT.jpg" alt="" class="img-rounded"></a>
+			<br>
+			<a href="photos/hvar.jpg" data-lightbox="rj" data-title=""><img src="photos/hvarT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/kayak.jpg" data-lightbox="rj" data-title=""><img src="photos/kayakT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/marathon.jpg" data-lightbox="rj" data-title=""><img src="photos/marathonT.jpg" alt="" class="img-rounded"></a>
+			<br>
+			<a href="photos/ord.jpg" data-lightbox="rj" data-title=""><img src="photos/ordT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/santamonica.jpg" data-lightbox="rj" data-title=""><img src="photos/santamonicaT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/toothbrush.jpg" data-lightbox="rj" data-title=""><img src="photos/toothbrushT.jpg" alt="" class="img-rounded"></a>
+			<br>
+			<a href="photos/sf.jpg" data-lightbox="rj" data-title=""><img src="photos/sfT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/tahoe.jpg" data-lightbox="rj" data-title=""><img src="photos/tahoeT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/searanch.jpg" data-lightbox="rj" data-title=""><img src="photos/searanchT.jpg" alt="" class="img-rounded"></a>
+			<br>
 
 		</div>
 	</div>
