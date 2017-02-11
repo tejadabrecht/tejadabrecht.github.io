@@ -1,23 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Rob & Jon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:100,300,400" rel="stylesheet">
 	<style type="text/css">
 		body {
-			font-family: sans-serif;
-			background-color: #FF6F59;
+			font-family: 'Roboto Condensed', sans-serif;
+			/*font-family: 'Roboto', sans-serif;*/
+			color: #333333;
+			background-image: url("backU.jpg");
+			background-size: cover;
 		}
-		h1 {
-			font-size: 300%;
-			color:white;
-			text-align: center;
-			font-weight: 100;
+		.box {
+			padding:10px 0 25px;
+			margin:50px;
+			/*border-style: solid;*/
+			/*border-width: 1px;*/
+			/*border-color: black;*/
+			border-radius: 3px;
+			background-color: #fbf9f9;
+			opacity:0.9;
+		}
+		.page-header {
+			border:none;
+			padding:0;
+		}
+		.error {
+			margin-top: 10px;
 		}
 	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var codeMap = {
+				'568' : 'q75Rnpj7FfMdt9Ld2',
+			};
+			$('form').submit(function(e){
+				e.preventDefault();
+				$('.error').hide();
+				var code = e.target[0].value;
+				if (code && codeMap[code]) {
+					window.location.href = 'https://goo.gl/forms/' + codeMap[code];
+				} else if (code && !codeMap[code]) {
+					//show error
+					$('.error').show();
+				}
+			});
+		});
+	</script>
 </head>
 <body>
-	<h1>May 6, 2017</h1>
-	<h1>Sedona, AZ</h1>
-	
+	<div class="container">
+		<div class="page-header">
+			<h1>Rob & Jon</h1>
+			<p class="lead">We're getting married! 😍</p>
+		</div>
+		<div class="box text-center">
+			<h1>RSVP</h1>
+			<p>Please enter the code on the back of your invitation to open your RSVP form.</p>
+			<form>
+				<input class="form-control" style="display:inline-block;width:60px;text-align:center" placeholder="000" type="text">
+				<input class="form-control" style="display:inline-block;width:60px" type="submit" value="Next">
+			</form>
+			<p style="display:none" class="error"><b>Invalid code.</b> Please double-check the code on the back of your invitation and let us know if you need help. Jon (480) 220 - 1529 </p>
+		</div>
+		<div class="box text-center">
+			<h1>May 6, 2017</h1>
+			<h3>Agave of Sedona</h3>
+			<iframe width="600" height="350" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjwkQwkihLYcRGXkfYuDAxws&key=AIzaSyCQG0N4NCJ25n52ZgcAtw9-vVNE7RqHyK0&maptype=satellite&zoom=18"></iframe>
+		</div>
+		<div class="box text-center">
+			<h1>Sedona</h1>
+			<h3>Hikes</h3>
+		</div>
+		<div class="box text-center">
+			<h1>Registry</h1>
+		</div>
+	</div>
 </body>
 </html>
