@@ -16,9 +16,6 @@
 		.box {
 			padding:10px 10px 25px;
 			margin:50px;
-			/*border-style: solid;*/
-			/*border-width: 1px;*/
-			/*border-color: black;*/
 			border-radius: 3px;
 			background-color: #fbf9f9;
 			opacity:0.9;
@@ -37,6 +34,9 @@
 		    .box {
 		    	margin:20px;
 		    }
+		    body { 
+		    	text-align:center;
+		    }
 		}
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -52,7 +52,6 @@
 				if (code && codeMap[code]) {
 					window.location.href = 'https://goo.gl/forms/' + codeMap[code];
 				} else if (code && !codeMap[code]) {
-					//show error
 					$('.error').show();
 				}
 			});
