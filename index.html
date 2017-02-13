@@ -34,12 +34,12 @@
 			border-radius: 3px;
 		}
 		.page-header h1 {
-			font-family: 'Roboto', sans-serif;
+			/*font-family: 'Roboto', sans-serif;*/
 			font-size: 50px;
 			text-shadow: 0 0 10px rgba(255,255,255,0.7);
-			/*text-transform: uppercase;*/
-			font-weight: 300;
-			letter-spacing: 1px;
+			text-transform: uppercase;
+			font-weight: 400;
+			/*letter-spacing: 1px;*/
 		}
 		.page-header h2 {
 			letter-spacing: 9px;
@@ -62,9 +62,28 @@
 			margin:20px;
 			border-radius: 3px;
 		}
+		.hikes .img-rounded {
+			margin-top: 0;
+			margin-bottom: 5px;
+		}
+		.mapAlt {
+			display: none;
+		}
+		a {
+			color: white;
+			text-decoration: underline;
+		}
+		.blue {
+			color:#5c7076;
+			margin-bottom: -14px;
+			margin-top: 12px;
+		}
 		@media (max-width: 767px) {
 		    .map {
 		        display:none;
+		    }
+		    .mapAlt {
+		    	display:block;
 		    }
 		    .box {
 		    	margin:20px;
@@ -110,41 +129,71 @@
 		</div>
 		<h1 class="boxTitle">WHEN + WHERE</h1>
 		<div class="box text-center">
-			<h2>Saturday May 6, 2017</h2>
-			<h2>Agave of Sedona</h2>
+			<h1>Saturday May 6, 2017 at 4 PM</h1>
+			<h3 class="blue">Wedding & Reception at</h3>
+			<h1>Agave of Sedona</h1>
+						<div class="mapAlt">
+				<h3><a href="https://maps.google.com/maps?ll=34.863189,-111.781217&z=18&t=h&hl=en-US&gl=US&deg=0&mapclient=embed&cid=848859124734064921">1146 AZ-89A, Sedona, AZ 86336</a></h3>
+			</div>
 			<div class="map">
 				<iframe width="600" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjwkQwkihLYcRGXkfYuDAxws&key=AIzaSyCQG0N4NCJ25n52ZgcAtw9-vVNE7RqHyK0&maptype=satellite&zoom=18"></iframe>
 			</div>
 		</div>
-		<h1 class="boxTitle">HIKES</h1>
-		<div class="box text-center">
-			<h2>Bear Mountain</h2>
-			<h2>Devil's Bridge</h2>
-			<h2>West Fork</h2>
-			<h2>Soldier Pass</h2>
-			<!-- <h3>Hikes</h3> -->
+		<h1 class="boxTitle">HIKES </h1>
+		<div class="box text-center hikes">
+			<h2>We love Sedona and we hope you get a chance to explore. <br>Here are a few of our favorite spots.</h2> <br>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-4">
+					<h3>Bear Mountain</h3>
+					<a href="hikes/bear.jpg" data-lightbox="hike" data-title=""><img src="hikes/bearT.jpg" alt="" class="img-rounded"></a>
+					<br>
+					<p>Steep sunny hike just west of Sedona. <a href="https://hikearizona.com/decoder.php?ZTN=310"><u>More info</u></a></p>
+				</div>
+				<div class="col-md-4">
+					<h3>Devil's Bridge</h3>
+					<a href="hikes/devil.jpg" data-lightbox="hike" data-title=""><img src="hikes/devilT.jpg" alt="" class="img-rounded"></a>
+					<p>Moderate hike up to a natural bridge. <a href="https://hikearizona.com/decoder.php?ZTN=36"><u>More info</u></a></p>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-4">
+					<h3>West Fork</h3>
+					<a href="hikes/west.jpg" data-lightbox="hike" data-title=""><img src="hikes/westT.jpg" alt="" class="img-rounded"></a>
+					<p>Beautiful hike along a stream in Oak Creek Canyon. <a href="https://hikearizona.com/decoder.php?ZTN=147"><u>More info</u></a></p>
+				</div>
+				<div class="col-md-4">
+					<h3>Soldier Pass</h3>
+					<a href="hikes/soldier.jpg" data-lightbox="hike" data-title=""><img src="hikes/soldierT.jpg" alt="" class="img-rounded"></a>
+					<p>Easier hike with trailhead close to Agave. <a href="https://hikearizona.com/decoder.php?ZTN=121"><u>More info</u></a></p>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+
 		</div>
 		<h1 class="boxTitle">R + J</h1>
 		<div class="box text-center">
-			<a href="photos/bearmtn.jpg" data-lightbox="rj" data-title=""><img src="photos/bearmtnT.jpg" alt="" class="img-rounded"></a>
-			<a href="photos/bey.jpg" data-lightbox="rj" data-title=""><img src="photos/beyT.jpg" alt="" class="img-rounded"></a>
-			<a href="photos/flatiron.jpg" data-lightbox="rj" data-title=""><img src="photos/flatironT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/bearmtn.jpg" data-lightbox="rj" data-title="Bear Mountain"><img src="photos/bearmtnT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/bey.jpg" data-lightbox="rj" data-title="Beyonce"><img src="photos/beyT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/flatiron.jpg" data-lightbox="rj" data-title="Flatiron"><img src="photos/flatironT.jpg" alt="" class="img-rounded"></a>
 			<br>
-			<a href="photos/dc.jpg" data-lightbox="rj" data-title=""><img src="photos/dcT.jpg" alt="" class="img-rounded"></a>
-			<a href="photos/desert.jpg" data-lightbox="rj" data-title=""><img src="photos/desertT.jpg" alt="" class="img-rounded"></a>
-			<a href="photos/camelback.jpg" data-lightbox="rj" data-title=""><img src="photos/camelbackT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/dc.jpg" data-lightbox="rj" data-title="DC"><img src="photos/dcT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/desert.jpg" data-lightbox="rj" data-title="Desert Botanical Garden"><img src="photos/desertT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/camelback.jpg" data-lightbox="rj" data-title="Camelback"><img src="photos/camelbackT.jpg" alt="" class="img-rounded"></a>
 			<br>
-			<a href="photos/hvar.jpg" data-lightbox="rj" data-title=""><img src="photos/hvarT.jpg" alt="" class="img-rounded"></a>
-			<a href="photos/kayak.jpg" data-lightbox="rj" data-title=""><img src="photos/kayakT.jpg" alt="" class="img-rounded"></a>
-			<a href="photos/marathon.jpg" data-lightbox="rj" data-title=""><img src="photos/marathonT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/hvar.jpg" data-lightbox="rj" data-title="Hvar"><img src="photos/hvarT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/kayak.jpg" data-lightbox="rj" data-title="Potomac River"><img src="photos/kayakT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/marathon.jpg" data-lightbox="rj" data-title="LA Marathon"><img src="photos/marathonT.jpg" alt="" class="img-rounded"></a>
 			<br>
-			<a href="photos/ord.jpg" data-lightbox="rj" data-title=""><img src="photos/ordT.jpg" alt="" class="img-rounded"></a>
-			<a href="photos/santamonica.jpg" data-lightbox="rj" data-title=""><img src="photos/santamonicaT.jpg" alt="" class="img-rounded"></a>
-			<a href="photos/toothbrush.jpg" data-lightbox="rj" data-title=""><img src="photos/toothbrushT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/ord.jpg" data-lightbox="rj" data-title="Mount Ord"><img src="photos/ordT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/santamonica.jpg" data-lightbox="rj" data-title="Santa Monica Pier"><img src="photos/santamonicaT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/toothbrush.jpg" data-lightbox="rj" data-title="Sedona"><img src="photos/toothbrushT.jpg" alt="" class="img-rounded"></a>
 			<br>
-			<a href="photos/sf.jpg" data-lightbox="rj" data-title=""><img src="photos/sfT.jpg" alt="" class="img-rounded"></a>
-			<a href="photos/tahoe.jpg" data-lightbox="rj" data-title=""><img src="photos/tahoeT.jpg" alt="" class="img-rounded"></a>
-			<a href="photos/searanch.jpg" data-lightbox="rj" data-title=""><img src="photos/searanchT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/sf.jpg" data-lightbox="rj" data-title="San Francisco"><img src="photos/sfT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/tahoe.jpg" data-lightbox="rj" data-title="Lake Tahoe"><img src="photos/tahoeT.jpg" alt="" class="img-rounded"></a>
+			<a href="photos/searanch.jpg" data-lightbox="rj" data-title="Sea Ranch"><img src="photos/searanchT.jpg" alt="" class="img-rounded"></a>
 			<br>
 
 		</div>
